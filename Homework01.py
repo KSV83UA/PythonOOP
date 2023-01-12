@@ -90,7 +90,7 @@ class Order:
     def get_all_product(self):
         all_product = ""
         for i in self._product:
-            all_product += f'name:{i["product"].get_name()} \\ count: {i["count"]} \\ price: {i["product"].get_price():.2f}$ \n'
+            all_product += f'name:{i["product"].get_name()} \\ count: {i["count"]} \\ price: {i["product"].get_price():.2f}$  \\ Summa: {i["product"].get_price() * i["count"]} \n'
         return all_product
 
     def get_summ(self):
@@ -103,8 +103,8 @@ class Order:
         pass
 
     def __str__(self):
-        return f'Customer: {self._customer.get_full_name()} \nProduct:\n{self.get_all_product()}\nSumma: {self.get_summ():.2f}$'
-        return " "
+        return f'Customer: {self._customer.get_full_name()} \nProduct:\n{self.get_all_product()}\nOrder summa: {self.get_summ():.2f}$'
+
 
 
 product1 = Product('apple', 12.00, 1, 'green apple')
