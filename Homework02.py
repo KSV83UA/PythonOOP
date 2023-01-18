@@ -34,7 +34,10 @@ class Group:
         return '\n'.join(map(str, self.students))
 
     def add(self, student):
-        self.students.append(student)
+        if len(self.students) > 10:
+            return "no free places "
+        else:
+            self.students.append(student)
 
     def remove(self, surname):
         for i in self.students:
@@ -52,7 +55,7 @@ class Group:
 
 gr = Group("KS-00-1")
 s = {}
-for i in range(10):
+for i in range(11):
     s[i] = Student("surname" + str(i),"name" + str(i), i, "descriptions" + str(i))
 
 for i in range(10):
