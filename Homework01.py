@@ -112,7 +112,7 @@ product2 = Product('orange', 14.00, 1, 'orange Egypt')
 product3 = Product('carrot', 1.00, 1, 'carrot Ukraine')
 product4 = Product('raspberry', 122.00, 1, 'raspberry fresh')
 
-cust = Customer('Serhii', 'Kushnirenko', '+380979224994')
+cust = Customer('name', 'surname', '123123123')
 
 order1 = Order(cust)
 
