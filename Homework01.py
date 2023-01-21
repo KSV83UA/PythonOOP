@@ -6,28 +6,45 @@
 # 3. Створіть клас "Замовлення". Замовлення може містити декілька товарів певної кількості. Замовлення має містити дані
 # про користувача, який його здійснив. Реалізуйте метод обчислення сумарної вартості замовлення. Визначте метод str()
 # для коректного виведення інформації про це замовлення.
+class ErrorCounts(Exception):
+    def __init__(self, msg):
+        super().__init__()
+        self.message = msg
+    def __str__(self):
+        return str(self.message)
+
+class ErrorPrice(Exception):
+    def __init__(self, msg):
+        super().__init__()
+        self.message = msg
+    def __str__(self):
+        return str(self.message)
+
 class Product:
     def __init__(self, name, price, weight, description):
         self._weight = weight
         self._name = name
-        self._price = price
+        if price <= 0:
+            raise ErrorPrice("Price have to be more 0")
+        else:
+            self._price = price
         self._description = description,
 
     def set_price(self, price):
-        self._price = price
-        return True
+        if price <= 0:
+            raise ErrorPrice("Price have to be more 0")
+        else:
+            self._price = price
+
 
     def set_weight(self, weight):
         self._weight = weight
-        return True
 
     def set_name(self, name):
         self._name = name
-        return True
 
     def set_description(self, description):
         self._description = description
-        return True
 
     def get_price(self):
         return self._price
@@ -70,7 +87,6 @@ class Customer:
 
     def set_mobile(self, mobile):
         self._mobile = mobile
-        return True
 
     def get_mobile(self):
         return self._mobile
@@ -85,7 +101,10 @@ class Order:
         self._product = []
 
     def add_product(self, product, count):
-        self._product.append({"product": product, "count": count})
+        if count <= 0:
+            raise ErrorCounts("Count have to  be more 0")
+        else:
+            self._product.append({"product": product, "count": count})
 
     def get_all_product(self):
         all_product = ""
@@ -106,19 +125,22 @@ class Order:
         return f'Customer: {self._customer.get_full_name()} \nProduct:\n{self.get_all_product()}\nOrder summa: {self.get_summ():.2f}$'
 
 
-
-product1 = Product('apple', 12.00, 1, 'green apple')
-product2 = Product('orange', 14.00, 1, 'orange Egypt')
-product3 = Product('carrot', 1.00, 1, 'carrot Ukraine')
-product4 = Product('raspberry', 122.00, 1, 'raspberry fresh')
+try:
+    product1 = Product('apple', 12.00, 1, 'green apple')
+    product2 = Product('orange', 14.00, 1, 'orange Egypt')
+    product3 = Product('carrot', 1.00, 1, 'carrot Ukraine')
+    product4 = Product('raspberry', -122.00, 1, 'raspberry fresh')
+except ErrorPrice as er:
+    print(er)
 
 cust = Customer('name', 'surname', '123123123')
 
 order1 = Order(cust)
-
-order1.add_product(product1, 8)
-order1.add_product(product2, 5)
-order1.add_product(product3, 1)
-order1.add_product(product4, 6)
-
+try:
+    order1.add_product(product1, 8)
+    order1.add_product(product2, 5)
+    order1.add_product(product3, -1)
+    order1.add_product(product4, 6)
+except ErrorCounts as er:
+    print(er)
 print(str(order1))
