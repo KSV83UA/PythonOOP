@@ -1,0 +1,56 @@
+ERROR:ex: Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\PythonProject\HMOOP\PythonOOP\Homework02.py", line 76, in <module>
+    gr.add(s[i])
+  File "D:\PythonProject\HMOOP\PythonOOP\Homework02.py", line 51, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+AddStudentUser:  Count users have to be less 10
+ERROR:ex: Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\PythonProject\HMOOP\PythonOOP\Homework02.py", line 76, in <module>
+    gr.add(s[i])
+  File "D:\PythonProject\HMOOP\PythonOOP\Homework02.py", line 51, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+AddStudentUser:  Count users have to be less 10
+ERROR:ex: Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\PythonProject\HMOOP\PythonOOP\Homework02.py", line 76, in <module>
+    gr.add(s[i])
+  File "D:\PythonProject\HMOOP\PythonOOP\Homework02.py", line 51, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+AddStudentUser:  Count users have to be less 10
+ERROR:ex: Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\PythonProject\HMOOP\PythonOOP\Homework02.py", line 76, in <module>
+    gr.add(s[i])
+  File "D:\PythonProject\HMOOP\PythonOOP\Homework02.py", line 51, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+AddStudentUser:  Count users have to be less 10
+ERROR:ex: Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\PythonProject\HMOOP\PythonOOP\Homework02.py", line 82, in <module>
+    gr.add(s[i])
+  File "D:\PythonProject\HMOOP\PythonOOP\Homework02.py", line 57, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+AddStudentUser:  Count users have to be less 10
+ERROR:ex: Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\PythonProject\HMOOP\PythonOOP\Homework02.py", line 82, in <module>
+    gr.add(s[i])
+  File "D:\PythonProject\HMOOP\PythonOOP\Homework02.py", line 57, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+AddStudentUser:  Count users have to be less 10
+ERROR:ex: Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\PythonProject\HMOOP\PythonOOP\Homework02.py", line 82, in <module>
+    gr.add(s[i])
+  File "D:\PythonProject\HMOOP\PythonOOP\Homework02.py", line 57, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+AddStudentUser:  Count users have to be less 10
+ERROR:ex: Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\PythonProject\HMOOP\PythonOOP\Homework02.py", line 82, in <module>
+    gr.add(s[i])
+  File "D:\PythonProject\HMOOP\PythonOOP\Homework02.py", line 57, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+AddStudentUser:  Count users have to be less 10

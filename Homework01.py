@@ -77,7 +77,6 @@ class Customer:
 
     def set_surname(self, surname):
         self._surname = surname
-        return True
 
     def get_full_name(self):
         return f'{self._name} {self._surname}'
