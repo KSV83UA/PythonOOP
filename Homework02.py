@@ -6,8 +6,24 @@
 # Визначте для Групи метод str() для повернення списку студентів у вигляді рядка.
 import logging
 
-logging.basicConfig(filename="sample.log", level=logging.INFO)
-log = logging.getLogger("ex")
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+formatter = logging.Formatter('%(asctime)s %(name)-12s %(levelname)-8s %(message)s')
+console = logging.StreamHandler()
+console.setLevel(logging.WARNING)
+console.setFormatter(formatter)
+filehandler = logging.FileHandler('sample.log')
+filehandler.setLevel(logging.INFO)
+filehandler.setFormatter(formatter)
+logger.addHandler(console)
+logger.addHandler(filehandler)
+
+# logging.basicConfig(filename="sample.log", level=logging.INFO)
+# log = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+# log.setFormatter(formatter)
+# # add ch to logger
+# logger.addHandler(log)
+# # log = logging.getLogger("ex")
 
 class AddStudentUser(Exception):
     def __init__(self, msg):
@@ -57,6 +73,7 @@ class Group:
             raise AddStudentUser(f" Count users have to be less {self.max_students}")
         else:
             self.students.append(student)
+            logger.info(f"Student {student} add to group successfully" )
 
     def remove(self, surname):
         for i in self.students:
@@ -82,14 +99,14 @@ for i in range(14):
         gr.add(s[i])
     except AddStudentUser as er:
         print(er)
-        log.exception(er)
+        logger.exception(er)
 
 print(gr)
 try:
-    print(gr.remove("surname3"))
-except RemoveStudentUser as er:
-    print(er)
-    log.exception(er)
+    print(gr.remove("3"))
+except RemoveStudentUser as err:
+    print(err)
+    logger.exception(err)
 
 print(gr)
 
