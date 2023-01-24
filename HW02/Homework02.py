@@ -12,7 +12,7 @@ formatter = logging.Formatter('%(asctime)s %(name)-12s %(levelname)-8s %(message
 console = logging.StreamHandler()
 console.setLevel(logging.WARNING)
 console.setFormatter(formatter)
-filehandler = logging.FileHandler('sample.log')
+filehandler = logging.FileHandler('../sample.log')
 filehandler.setLevel(logging.INFO)
 filehandler.setFormatter(formatter)
 logger.addHandler(console)
