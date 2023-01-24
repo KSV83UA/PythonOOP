@@ -9,8 +9,7 @@ class Order:
     def add_product(self, product: object, count: object) -> object:
         if count <= 0:
             raise ErrorCounts("Count have to  be more 0")
-        else:
-            self._product.append({"product": product, "count": count})
+        self._product.append({"product": product, "count": count})
 
     def get_all_product(self):
         all_product = ""
@@ -19,10 +18,10 @@ class Order:
         return all_product
 
     def get_summ(self):
-        summ = 0
-        for i in self._product:
-            summ += i["product"].get_price() * i["count"]
-        return summ
+         summ = 0
+         for i in self._product:
+             summ += i["product"].get_price() * i["count"]
+         return summ
 
     def remove_product(self, product):
         pass

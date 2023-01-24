@@ -14,7 +14,7 @@ import Group
 gr = Group.Group("KS-00-1")
 s = {}
 for i in range(15):
-    s[i] = Student.Student("surname" + str(i),"name" + str(i), i, "descriptions" + str(i))
+    s[i] = Student.Student("surname" + str(i), "name" + str(i), i, "descriptions" + str(i))
 
 for i in range(14):
     try:

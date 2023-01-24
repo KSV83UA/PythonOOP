@@ -1,20 +1,20 @@
 from MyExcept import *
 
+
 class Product:
+
     def __init__(self, name, price, weight, description):
         if price <= 0:
             raise ErrorPrice("Price have to be more 0")
         self._weight = weight
         self._name = name
         self._price = price
-        self._description = description,
+        self._description = description
 
     def set_price(self, price):
         if price <= 0:
             raise ErrorPrice("Price have to be more 0")
-        else:
-            self._price = price
-
+        self._price = price
 
     def set_weight(self, weight):
         self._weight = weight

@@ -9,7 +9,6 @@ class Customer:
 
     def set_name(self, name):
         self._name = name
-        return True
 
     def get_name(self):
         return self._name
