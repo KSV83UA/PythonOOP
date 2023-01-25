@@ -1,2 +1,8 @@
 test.py
+sample.log
+HW01/
+HW01/__pycache__/
+HW02/__pycache__/
 __pycache__/
+*.py[cod]
+.idea
