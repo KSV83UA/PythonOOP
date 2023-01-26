@@ -3,6 +3,7 @@
 
 import math
 
+
 class ErrorZero(Exception):
 
     def __init__(self, msg):
@@ -54,11 +55,12 @@ class Fraction():
             n2 /= x
 
         return Fraction(int(n1), int(n2))
+
     def __sub__(self, other):
         n1 = self.number1 * other.number2 - other.number1 * self.number2
         n2 = self.number2 * other.number2
 
-        if (n1 % n2):
+        if n1 % n2:
             x = math.gcd(n1, n2)
             n1 /= x
             n2 /= x
@@ -76,7 +78,6 @@ if __name__ == "__main__":
     print(f'fr_1: {fr_1}')
     print(f'fr_2: {fr_2}')
     print(f'fr_3: {fr_3}')
-
 
     print(f'fr_1 == fr_2: {fr_1 == fr_2}')
     print(f'fr_1 + fr_2: {fr_1 + fr_2}')
