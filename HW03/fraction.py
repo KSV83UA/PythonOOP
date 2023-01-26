@@ -14,14 +14,14 @@ class ErrorZero(Exception):
 
 class Fraction():
 
-    def __init__(self, fr1, fr2):
+    def __init__(self,  fr, fr1, fr2):
         #Считаем, что не передаем сюда целые числа, иначе 0 в переменной fr2 обозначал бы передачу целого числа
         #в данном случае делаем исключение, так как класс про дроби, а они на 0 не делятся )
 
         if fr2 == 0:
             raise ErrorZero("not sub zero")
 
-        self.int_number = 0
+        self.int_number = fr
         self.number1 = fr1
         self.number2 = fr2
 
@@ -34,11 +34,20 @@ class Fraction():
     def __eq__(self, other):
         return self.number1 == other.number1 and self.number2 == other.number2
 
-
+    def __add__(self, other):
+        pass
+    #     n1 = self.number1 * other.number2 + other.number1 * self.number1
+    #     n2 = self.number2 * other.number2
+    #     if n1 > n2:
+    #         n3 = n1 % n2
+    #         n1
+    #     return Fraction()
+    #
+    # 15/ 2
 
 if __name__ == "__main__":
-    fr_1 = Fraction(5,6)
-    fr_2 = Fraction(10,5)
+    fr_1 = Fraction(0,5,6)
+    fr_2 = Fraction(0, 10,5)
     print(f'fr_1: {fr_1}')
     print(f'fr_2: {fr_2}')
 
