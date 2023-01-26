@@ -7,23 +7,23 @@
 # про користувача, який його здійснив. Реалізуйте метод обчислення сумарної вартості замовлення. Визначте метод str()
 # для коректного виведення інформації про це замовлення.
 
-from MyExcept import *
-import Product
-import Customer
-import Order
+from my_except import *
+import product
+import customer
+import order
 
 
 try:
-    product1 = Product.Product('apple', 12.00, 1, 'green apple')
-    product2 = Product.Product('orange', 14.00, 1, 'orange Egypt')
-    product3 = Product.Product('carrot', 1.00, 1, 'carrot Ukraine')
-    product4 = Product.Product('raspberry', -122.00, 1, 'raspberry fresh')
+    product1 = product.Product('apple', 12.00, 1, 'green apple')
+    product2 = product.Product('orange', 14.00, 1, 'orange Egypt')
+    product3 = product.Product('carrot', 1.00, 1, 'carrot Ukraine')
+    product4 = product.Product('raspberry', -122.00, 1, 'raspberry fresh')
 except ErrorPrice as er:
     print(er)
 
-cust = Customer.Customer('name', 'surname', '123123123')
+cust = customer.Customer('name', 'surname', '123123123')
 
-order1 = Order.Order(cust)
+order1 = order.Order(cust)
 try:
     order1.add_product(product1, 8)
     order1.add_product(product2, 5)
