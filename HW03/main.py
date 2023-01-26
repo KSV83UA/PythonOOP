@@ -70,6 +70,7 @@ class Rectangle():
     def __rmul__(self, other):
         return self._mul(other)
 
+
 if __name__ == "__main__":
 
     try:
@@ -96,7 +97,7 @@ if __name__ == "__main__":
 
     print(f'{rec_3} area: {rec_3.area()}')
 
-    print(f'rec_1 + rec_3 + rec_3 = {(rec_3 + rec_2 + rec_1).area()}')
+    print(f'rec_1 + rec_2 + rec_3 = {(rec_3 + rec_2 + rec_1).area()}')
     print(f'rec_3: {rec_3} area {rec_3.area()}')
     rec_3 *= 3
     print(f'"rec_3 *= 3" : {rec_3} area {rec_3.area()}')
