@@ -52,7 +52,7 @@ class Fraction():
         n1 = self.number1 * other.number2 + other.number1 * self.number2
         n2 = self.number2 * other.number2
 
-        if (n1 % n2):
+        if n1 % n2:
             x = math.gcd(n1, n2)
             n1 /= x
             n2 /= x

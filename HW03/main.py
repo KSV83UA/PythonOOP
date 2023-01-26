@@ -12,6 +12,7 @@ class ErrorRec(Exception):
     def __str__(self):
         return self.msg
 
+
 class Rectangle():
 
     def __init__(self, weight, height):
@@ -69,8 +70,6 @@ class Rectangle():
     def __rmul__(self, other):
         return self._mul(other)
 
-
-
 if __name__ == "__main__":
 
     try:
@@ -90,12 +89,10 @@ if __name__ == "__main__":
     print(f"area1 >= area2: {rec_1 >= rec_2}")
     print(f"area1 <= area2: {rec_1 <= rec_2}")
 
-
     try:
-     rec_3 = rec_1 + rec_2
+        rec_3 = rec_1 + rec_2
     except ErrorRec as er:
         print(er.msg)
-
 
     print(f'{rec_3} area: {rec_3.area()}')
 
