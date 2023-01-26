@@ -1,8 +1,8 @@
-from MyExcept import *
+from my_except import *
 
-import People
+import people
 
-class Student(People.People):
+class Student(people.People):
 
     def __init__(self,  surname, name, age, descriptions):
         super().__init__(surname, name, age)
