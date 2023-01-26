@@ -45,7 +45,10 @@ class Fraction():
     def __eq__(self, other):
         return self.number1 == other.number1 and self.number2 == other.number2
 
-    def __add__(self, other):
+    def _add(self, other):
+        if not isinstance(other, Fraction):
+            return NotImplemented
+
         n1 = self.number1 * other.number2 + other.number1 * self.number2
         n2 = self.number2 * other.number2
 
@@ -55,6 +58,36 @@ class Fraction():
             n2 /= x
 
         return Fraction(int(n1), int(n2))
+
+    def __add__(self, other):
+        return self._add(self, other)
+        # if not isinstance(other, Fraction):
+        #     return NotImplemented
+        #
+        # n1 = self.number1 * other.number2 + other.number1 * self.number2
+        # n2 = self.number2 * other.number2
+        #
+        # if (n1 % n2):
+        #     x = math.gcd(n1, n2)
+        #     n1 /= x
+        #     n2 /= x
+        #
+        # return Fraction(int(n1), int(n2))
+
+    def __radd__(self, other):
+        return self._add(self, other)
+        # if not isinstance(other, Fraction):
+        #     return NotImplemented
+        #
+        # n1 = self.number1 * other.number2 + other.number1 * self.number2
+        # n2 = self.number2 * other.number2
+        #
+        # if (n1 % n2):
+        #     x = math.gcd(n1, n2)
+        #     n1 /= x
+        #     n2 /= x
+        #
+        # return Fraction(int(n1), int(n2))
 
     def __sub__(self, other):
         n1 = self.number1 * other.number2 - other.number1 * self.number2
