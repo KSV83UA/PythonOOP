@@ -27,17 +27,15 @@ class Rectangle():
     def area(self):
         return self.weight * self.height
 
+    def __radd__(self, other):
+        if not isinstance(other, Rectangle):
+            return NotImplemented
+        return Rectangle((self.area() + other.area()) / 2, 2)
+
     def __add__(self, other):
-        # так как по идее должны вернуть истанс  то пойдем путем суммирования площадей прямоугольников и делим их на
-        # 2 для получения нового прямоугольника
-
+        if not isinstance(other, Rectangle):
+            return NotImplemented
         return Rectangle((self.area() + other.area())/2, 2)
-
-        #  return Rectangle(self.weight + other.weight, self.height + other.height)
-        #  если нужно сложить стороны
-        # OR
-        # return self.area() + other.area()
-        # если хотим чтобы работало не правильно
 
     def __lt__(self, other):
         return self.area() < other.area()
@@ -57,10 +55,21 @@ class Rectangle():
     def __ne__(self, other):
         return self.area() != other.area()
 
-    def __mul__(self, other):
+    def _mul(self, other):
+        if not isinstance(other, int | float):
+            return NotImplemented
+
         self.weight *= other
         self.height *= other
         return self
+
+    def __mul__(self, other):
+        return self._mul(other)
+
+    def __rmul__(self, other):
+        return self._mul(other)
+
+
 
 if __name__ == "__main__":
 

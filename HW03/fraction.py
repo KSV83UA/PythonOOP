@@ -60,34 +60,10 @@ class Fraction():
         return Fraction(int(n1), int(n2))
 
     def __add__(self, other):
-        return self._add(self, other)
-        # if not isinstance(other, Fraction):
-        #     return NotImplemented
-        #
-        # n1 = self.number1 * other.number2 + other.number1 * self.number2
-        # n2 = self.number2 * other.number2
-        #
-        # if (n1 % n2):
-        #     x = math.gcd(n1, n2)
-        #     n1 /= x
-        #     n2 /= x
-        #
-        # return Fraction(int(n1), int(n2))
+        return self._add( other)
 
     def __radd__(self, other):
-        return self._add(self, other)
-        # if not isinstance(other, Fraction):
-        #     return NotImplemented
-        #
-        # n1 = self.number1 * other.number2 + other.number1 * self.number2
-        # n2 = self.number2 * other.number2
-        #
-        # if (n1 % n2):
-        #     x = math.gcd(n1, n2)
-        #     n1 /= x
-        #     n2 /= x
-        #
-        # return Fraction(int(n1), int(n2))
+        return self._add(other)
 
     def __sub__(self, other):
         n1 = self.number1 * other.number2 - other.number1 * self.number2
@@ -101,6 +77,13 @@ class Fraction():
         return Fraction(int(n1), int(n2))
 
     def __mul__(self, other):
+        if not isinstance(other, int | float):
+            return NotImplemented
+        return Fraction(int(self.number1 * other), int(self.number2))
+
+    def __rmul__(self, other):
+        if not isinstance(other, int | float):
+            return NotImplemented
         return Fraction(int(self.number1 * other), int(self.number2))
 
 
@@ -121,3 +104,6 @@ if __name__ == "__main__":
 
     fr_4 = fr_1 * 3
     print(f'fr_1 * 3 = {fr_4}')
+    fr_5 = 3 * fr_1
+    print(f'3 * fr_1  = {fr_5}')
+
