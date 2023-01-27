@@ -3,16 +3,6 @@
 
 import math
 
-
-class ErrorZero(Exception):
-
-    def __init__(self, msg):
-        self.msg = msg
-
-    def __str__(self):
-        return self.msg
-
-
 class Fraction():
     def __init__(self, fr1, fr2):
         if fr2 == 0:
@@ -92,7 +82,11 @@ class Fraction():
 if __name__ == "__main__":
     fr_1 = Fraction(2,2 )
     fr_2 = Fraction(4, 4)
-    fr_3 = Fraction(10, 6)
+    fr_3 = Fraction(10, 5)
+    try:
+        fr_4 = Fraction(2,0)
+    except ZeroDivisionError as er:
+        print(er)
     print(f'fr_1: {fr_1}')
     print(f'fr_2: {fr_2}')
     print(f'fr_3: {fr_3}')
