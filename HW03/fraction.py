@@ -16,7 +16,7 @@ class ErrorZero(Exception):
 class Fraction():
     def __init__(self, fr1, fr2):
         if fr2 == 0:
-            raise ErrorZero("not sub zero")
+            raise ZeroDivisionError("not sub zero")
 
         self.number1 = fr1
         self.number2 = fr2
@@ -43,7 +43,9 @@ class Fraction():
         return f"{int(n1)}/{int(n2)}"
 
     def __eq__(self, other):
-        return self.number1 == other.number1 and self.number2 == other.number2
+        x = math.gcd(self.number1, self.number2)
+        y = math.gcd(other.number1, other.number2)
+        return self.number1/x == other.number1/y and self.number2/x == other.number2/y
 
     def _add(self, other):
         if not isinstance(other, Fraction):
@@ -54,8 +56,8 @@ class Fraction():
 
         if n1 % n2:
             x = math.gcd(n1, n2)
-            n1 /= x
-            n2 /= x
+            n1 //= x
+            n2 //= x
 
         return Fraction(int(n1), int(n2))
 
@@ -71,8 +73,8 @@ class Fraction():
 
         if n1 % n2:
             x = math.gcd(n1, n2)
-            n1 /= x
-            n2 /= x
+            n1 //= x
+            n2 //= x
 
         return Fraction(int(n1), int(n2))
 
@@ -88,8 +90,8 @@ class Fraction():
 
 
 if __name__ == "__main__":
-    fr_1 = Fraction(5, 6)
-    fr_2 = Fraction(10, 5)
+    fr_1 = Fraction(2,2 )
+    fr_2 = Fraction(4, 4)
     fr_3 = Fraction(10, 6)
     print(f'fr_1: {fr_1}')
     print(f'fr_2: {fr_2}')
