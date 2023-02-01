@@ -2,6 +2,7 @@ from my_except import *
 
 import people
 
+
 class Student(people.People):
 
     def __init__(self,  surname, name, age, descriptions):

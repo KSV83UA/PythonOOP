@@ -283,3 +283,453 @@ Traceback (most recent call last):
   File "D:\Python\PythonOOP\HW02\group.py", line 25, in remove
     raise RemoveStudentUser("student not remove")
 my_except.RemoveStudentUser: student not remove
+2023-02-01 14:21:22,132 my_except    INFO     Student surname0 n. add to group successfully
+2023-02-01 14:21:22,133 my_except    INFO     Student surname1 n. add to group successfully
+2023-02-01 14:21:22,133 my_except    INFO     Student surname2 n. add to group successfully
+2023-02-01 14:21:22,133 my_except    INFO     Student surname3 n. add to group successfully
+2023-02-01 14:21:22,133 my_except    INFO     Student surname4 n. add to group successfully
+2023-02-01 14:21:22,134 my_except    INFO     Student surname5 n. add to group successfully
+2023-02-01 14:21:22,134 my_except    INFO     Student surname6 n. add to group successfully
+2023-02-01 14:21:22,134 my_except    INFO     Student surname7 n. add to group successfully
+2023-02-01 14:21:22,135 my_except    INFO     Student surname8 n. add to group successfully
+2023-02-01 14:21:22,135 my_except    INFO     Student surname9 n. add to group successfully
+2023-02-01 14:21:22,135 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 33, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:21:22,138 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 33, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:21:22,140 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 33, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:21:22,140 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 33, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:21:22,141 my_except    ERROR    student not remove
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 28, in <module>
+    print(gr.remove("3"))
+  File "D:\Python\PythonOOP\HW02\group.py", line 43, in remove
+    raise RemoveStudentUser("student not remove")
+my_except.RemoveStudentUser: student not remove
+2023-02-01 14:21:36,517 my_except    INFO     Student surname0 n. add to group successfully
+2023-02-01 14:21:36,517 my_except    INFO     Student surname1 n. add to group successfully
+2023-02-01 14:21:36,517 my_except    INFO     Student surname2 n. add to group successfully
+2023-02-01 14:21:36,518 my_except    INFO     Student surname3 n. add to group successfully
+2023-02-01 14:21:36,518 my_except    INFO     Student surname4 n. add to group successfully
+2023-02-01 14:21:36,518 my_except    INFO     Student surname5 n. add to group successfully
+2023-02-01 14:21:36,518 my_except    INFO     Student surname6 n. add to group successfully
+2023-02-01 14:21:36,518 my_except    INFO     Student surname7 n. add to group successfully
+2023-02-01 14:21:36,519 my_except    INFO     Student surname8 n. add to group successfully
+2023-02-01 14:21:36,519 my_except    INFO     Student surname9 n. add to group successfully
+2023-02-01 14:21:36,519 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 33, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:21:36,521 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 33, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:21:36,522 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 33, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:21:36,522 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 33, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:21:36,524 my_except    ERROR    student not remove
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 28, in <module>
+    print(gr.remove("3"))
+  File "D:\Python\PythonOOP\HW02\group.py", line 43, in remove
+    raise RemoveStudentUser("student not remove")
+my_except.RemoveStudentUser: student not remove
+2023-02-01 14:22:04,654 my_except    INFO     Student surname0 n. add to group successfully
+2023-02-01 14:22:04,655 my_except    INFO     Student surname1 n. add to group successfully
+2023-02-01 14:22:04,655 my_except    INFO     Student surname2 n. add to group successfully
+2023-02-01 14:22:04,655 my_except    INFO     Student surname3 n. add to group successfully
+2023-02-01 14:22:04,655 my_except    INFO     Student surname4 n. add to group successfully
+2023-02-01 14:22:04,655 my_except    INFO     Student surname5 n. add to group successfully
+2023-02-01 14:22:04,656 my_except    INFO     Student surname6 n. add to group successfully
+2023-02-01 14:22:04,656 my_except    INFO     Student surname7 n. add to group successfully
+2023-02-01 14:22:04,656 my_except    INFO     Student surname8 n. add to group successfully
+2023-02-01 14:22:04,656 my_except    INFO     Student surname9 n. add to group successfully
+2023-02-01 14:22:04,656 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 33, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:22:04,659 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 33, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:22:04,660 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 33, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:22:04,660 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 33, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:22:04,661 my_except    ERROR    student not remove
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 28, in <module>
+    print(gr.remove("3"))
+  File "D:\Python\PythonOOP\HW02\group.py", line 43, in remove
+    raise RemoveStudentUser("student not remove")
+my_except.RemoveStudentUser: student not remove
+2023-02-01 14:22:31,005 my_except    INFO     Student surname0 n. add to group successfully
+2023-02-01 14:22:31,005 my_except    INFO     Student surname1 n. add to group successfully
+2023-02-01 14:22:31,005 my_except    INFO     Student surname2 n. add to group successfully
+2023-02-01 14:22:31,005 my_except    INFO     Student surname3 n. add to group successfully
+2023-02-01 14:22:31,005 my_except    INFO     Student surname4 n. add to group successfully
+2023-02-01 14:22:31,005 my_except    INFO     Student surname5 n. add to group successfully
+2023-02-01 14:22:31,005 my_except    INFO     Student surname6 n. add to group successfully
+2023-02-01 14:22:31,005 my_except    INFO     Student surname7 n. add to group successfully
+2023-02-01 14:22:31,005 my_except    INFO     Student surname8 n. add to group successfully
+2023-02-01 14:22:31,005 my_except    INFO     Student surname9 n. add to group successfully
+2023-02-01 14:22:31,005 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 33, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:22:31,006 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 33, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:22:31,007 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 33, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:22:31,007 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 33, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:22:31,007 my_except    ERROR    student not remove
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 28, in <module>
+    print(gr.remove("3"))
+  File "D:\Python\PythonOOP\HW02\group.py", line 43, in remove
+    raise RemoveStudentUser("student not remove")
+my_except.RemoveStudentUser: student not remove
+2023-02-01 14:22:54,223 my_except    INFO     Student surname0 n. add to group successfully
+2023-02-01 14:22:54,223 my_except    INFO     Student surname1 n. add to group successfully
+2023-02-01 14:22:54,223 my_except    INFO     Student surname2 n. add to group successfully
+2023-02-01 14:22:54,224 my_except    INFO     Student surname3 n. add to group successfully
+2023-02-01 14:22:54,224 my_except    INFO     Student surname4 n. add to group successfully
+2023-02-01 14:22:54,224 my_except    INFO     Student surname5 n. add to group successfully
+2023-02-01 14:22:54,224 my_except    INFO     Student surname6 n. add to group successfully
+2023-02-01 14:22:54,224 my_except    INFO     Student surname7 n. add to group successfully
+2023-02-01 14:22:54,224 my_except    INFO     Student surname8 n. add to group successfully
+2023-02-01 14:22:54,224 my_except    INFO     Student surname9 n. add to group successfully
+2023-02-01 14:22:54,224 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 33, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:22:54,225 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 33, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:22:54,226 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 33, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:22:54,226 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 33, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:22:54,226 my_except    ERROR    student not remove
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 28, in <module>
+    print(gr.remove("3"))
+  File "D:\Python\PythonOOP\HW02\group.py", line 43, in remove
+    raise RemoveStudentUser("student not remove")
+my_except.RemoveStudentUser: student not remove
+2023-02-01 14:26:12,509 my_except    INFO     Student surname0 n. add to group successfully
+2023-02-01 14:26:12,510 my_except    INFO     Student surname1 n. add to group successfully
+2023-02-01 14:26:12,510 my_except    INFO     Student surname2 n. add to group successfully
+2023-02-01 14:26:12,510 my_except    INFO     Student surname3 n. add to group successfully
+2023-02-01 14:26:12,510 my_except    INFO     Student surname4 n. add to group successfully
+2023-02-01 14:26:12,510 my_except    INFO     Student surname5 n. add to group successfully
+2023-02-01 14:26:12,511 my_except    INFO     Student surname6 n. add to group successfully
+2023-02-01 14:26:12,511 my_except    INFO     Student surname7 n. add to group successfully
+2023-02-01 14:26:12,511 my_except    INFO     Student surname8 n. add to group successfully
+2023-02-01 14:26:12,511 my_except    INFO     Student surname9 n. add to group successfully
+2023-02-01 14:26:12,511 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 34, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:26:12,513 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 34, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:26:12,513 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 34, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:26:12,514 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 34, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:26:12,514 my_except    ERROR    student not remove
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 28, in <module>
+    print(gr.remove("3"))
+  File "D:\Python\PythonOOP\HW02\group.py", line 44, in remove
+    raise RemoveStudentUser("student not remove")
+my_except.RemoveStudentUser: student not remove
+2023-02-01 14:26:24,932 my_except    INFO     Student surname0 n. add to group successfully
+2023-02-01 14:26:24,932 my_except    INFO     Student surname1 n. add to group successfully
+2023-02-01 14:26:24,932 my_except    INFO     Student surname2 n. add to group successfully
+2023-02-01 14:26:24,932 my_except    INFO     Student surname3 n. add to group successfully
+2023-02-01 14:26:24,932 my_except    INFO     Student surname4 n. add to group successfully
+2023-02-01 14:26:24,933 my_except    INFO     Student surname5 n. add to group successfully
+2023-02-01 14:26:24,933 my_except    INFO     Student surname6 n. add to group successfully
+2023-02-01 14:26:24,933 my_except    INFO     Student surname7 n. add to group successfully
+2023-02-01 14:26:24,933 my_except    INFO     Student surname8 n. add to group successfully
+2023-02-01 14:26:24,933 my_except    INFO     Student surname9 n. add to group successfully
+2023-02-01 14:26:24,933 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 34, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:26:24,934 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 34, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:26:24,934 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 34, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:26:24,934 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 34, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:26:24,935 my_except    ERROR    student not remove
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 28, in <module>
+    print(gr.remove("3"))
+  File "D:\Python\PythonOOP\HW02\group.py", line 44, in remove
+    raise RemoveStudentUser("student not remove")
+my_except.RemoveStudentUser: student not remove
+2023-02-01 14:26:40,471 my_except    INFO     Student surname0 n. add to group successfully
+2023-02-01 14:26:40,472 my_except    INFO     Student surname1 n. add to group successfully
+2023-02-01 14:26:40,472 my_except    INFO     Student surname2 n. add to group successfully
+2023-02-01 14:26:40,472 my_except    INFO     Student surname3 n. add to group successfully
+2023-02-01 14:26:40,472 my_except    INFO     Student surname4 n. add to group successfully
+2023-02-01 14:26:40,472 my_except    INFO     Student surname5 n. add to group successfully
+2023-02-01 14:26:40,472 my_except    INFO     Student surname6 n. add to group successfully
+2023-02-01 14:26:40,472 my_except    INFO     Student surname7 n. add to group successfully
+2023-02-01 14:26:40,473 my_except    INFO     Student surname8 n. add to group successfully
+2023-02-01 14:26:40,473 my_except    INFO     Student surname9 n. add to group successfully
+2023-02-01 14:26:40,473 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 34, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:26:40,474 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 34, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:26:40,475 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 34, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:26:40,475 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 34, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:26:40,476 my_except    ERROR    student not remove
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 28, in <module>
+    print(gr.remove("3"))
+  File "D:\Python\PythonOOP\HW02\group.py", line 44, in remove
+    raise RemoveStudentUser("student not remove")
+my_except.RemoveStudentUser: student not remove
+2023-02-01 14:29:51,107 my_except    INFO     Student surname0 n. add to group successfully
+2023-02-01 14:29:51,107 my_except    INFO     Student surname1 n. add to group successfully
+2023-02-01 14:29:51,107 my_except    INFO     Student surname2 n. add to group successfully
+2023-02-01 14:29:51,107 my_except    INFO     Student surname3 n. add to group successfully
+2023-02-01 14:29:51,107 my_except    INFO     Student surname4 n. add to group successfully
+2023-02-01 14:29:51,107 my_except    INFO     Student surname5 n. add to group successfully
+2023-02-01 14:29:51,107 my_except    INFO     Student surname6 n. add to group successfully
+2023-02-01 14:29:51,107 my_except    INFO     Student surname7 n. add to group successfully
+2023-02-01 14:29:51,107 my_except    INFO     Student surname8 n. add to group successfully
+2023-02-01 14:29:51,108 my_except    INFO     Student surname9 n. add to group successfully
+2023-02-01 14:29:51,108 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 34, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:29:51,108 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 34, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:29:51,109 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 34, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:29:51,109 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 34, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:29:51,109 my_except    ERROR    student not remove
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 28, in <module>
+    print(gr.remove("3"))
+  File "D:\Python\PythonOOP\HW02\group.py", line 44, in remove
+    raise RemoveStudentUser("student not remove")
+my_except.RemoveStudentUser: student not remove
+2023-02-01 14:30:38,389 my_except    INFO     Student surname0 n. add to group successfully
+2023-02-01 14:30:38,389 my_except    INFO     Student surname1 n. add to group successfully
+2023-02-01 14:30:38,390 my_except    INFO     Student surname2 n. add to group successfully
+2023-02-01 14:30:38,390 my_except    INFO     Student surname3 n. add to group successfully
+2023-02-01 14:30:38,390 my_except    INFO     Student surname4 n. add to group successfully
+2023-02-01 14:30:38,390 my_except    INFO     Student surname5 n. add to group successfully
+2023-02-01 14:30:38,390 my_except    INFO     Student surname6 n. add to group successfully
+2023-02-01 14:30:38,390 my_except    INFO     Student surname7 n. add to group successfully
+2023-02-01 14:30:38,390 my_except    INFO     Student surname8 n. add to group successfully
+2023-02-01 14:30:38,390 my_except    INFO     Student surname9 n. add to group successfully
+2023-02-01 14:30:38,391 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 34, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:30:38,392 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 34, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:30:38,392 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 34, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:30:38,393 my_except    ERROR     Count users have to be less 10
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 21, in <module>
+    gr.add(s[i])
+  File "D:\Python\PythonOOP\HW02\group.py", line 34, in add
+    raise AddStudentUser(f" Count users have to be less {self.max_students}")
+my_except.AddStudentUser:  Count users have to be less 10
+2023-02-01 14:30:38,393 my_except    ERROR    student not remove
+Traceback (most recent call last):
+  File "D:\Python\PythonOOP\HW02\Homework02.py", line 28, in <module>
+    print(gr.remove("3"))
+  File "D:\Python\PythonOOP\HW02\group.py", line 44, in remove
+    raise RemoveStudentUser("student not remove")
+my_except.RemoveStudentUser: student not remove

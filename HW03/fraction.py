@@ -68,7 +68,7 @@ class Fraction():
 
         return Fraction(int(n1), int(n2))
 
-    def __mul__(self, other):
+    def __mul__(self, other): #add * int
         if not isinstance(other, int | float):
             return NotImplemented
         return Fraction(int(self.number1 * other), int(self.number2))

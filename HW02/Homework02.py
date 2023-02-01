@@ -23,16 +23,17 @@ for i in range(14):
         print(er)
         logger.exception(er)
 
-print(gr)
+# print(gr)
 try:
     print(gr.remove("3"))
 except RemoveStudentUser as err:
     print(err)
     logger.exception(err)
 
-print(gr)
+# print(gr)
 
 tmp = gr.search("surname4")
 
-print(tmp.name)
-
+# /print(tmp.name)
+for item in gr:
+    print(item)
