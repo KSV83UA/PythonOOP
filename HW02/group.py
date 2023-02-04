@@ -1,6 +1,7 @@
 from my_except import *
 
 
+
 class GroupIter:
     def __init__(self, wrapper):
         self.index = 0
