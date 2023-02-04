@@ -35,8 +35,9 @@ except ErrorCounts as er:
     print(er)
 
 print(str(order1))
+print(f'{"*" * 30} ITER + ITEM {"*" * 30}')
+print(f"len: {len(order1)}")
 
-print(f'{"*" * 75}')
 print(f"index {order1[1]}")
 for item in order1:
     print(f"for {item}")

@@ -40,6 +40,8 @@ class Order:
             return self._product[index]
 
         return TypeError
+    def __len__(self):
+        return len(self._product)
 
     def add_product(self, product, count):
         if count <= 0:
