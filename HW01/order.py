@@ -2,9 +2,10 @@ from my_except import *
 import product
 
 class OrderIter:
-    def __init__(self, wrapper):
+    def __init__(self, wrapper, count):
         self.index = 0
         self.wrapper = wrapper
+        self.count = count
 
     def __iter__(self):
         return self
@@ -13,7 +14,7 @@ class OrderIter:
         if self.index >= len(self.wrapper):
             raise StopIteration
         self.index += 1
-        return self.wrapper[self.index - 1]
+        return self.wrapper[self.index - 1], self.count[self.index -1]
 
 
 class Order:
@@ -23,23 +24,20 @@ class Order:
         self.count = []
 
     def __iter__(self):
-        return OrderIter(self._product)
+        return OrderIter(self._product, self.count)
 
     def __getitem__(self, index):
         if isinstance(index, slice):
-            result = []
-            start = 0 if index.start == None else index.start
-            stop = len(self._product) - 1 if index.stop == None else index.stop
-            step = 1 if index.step == None else index.step
-            for i in range(start, stop, step):
-                result.append(self._product[i])
-            return result
+            result =  self._product[index]
+            result_count = self.count[index]
+            return [(product, count) for product, count in zip(result, result_count)]
         if isinstance(index, int):
             if index < 0 or index >= len(self._product):
                 raise IndexError
-            return self._product[index]
+            return self._product[index], self.count[index]
 
         return TypeError
+
     def __len__(self):
         return len(self._product)
 

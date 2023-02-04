@@ -27,7 +27,7 @@ order1 = order.Order(cust)
 try:
     order1.add_product(product1, 8)
     order1.add_product(product2, 5)
-    order1.add_product(product3, 5)
+    order1.add_product(product3, 9)
     order1.add_product(product4, 5)
     order1.add_product(product3, -1)
     order1.add_product(product4, 6)
@@ -36,13 +36,16 @@ except ErrorCounts as er:
 
 print(str(order1))
 print(f'{"*" * 30} ITER + ITEM {"*" * 30}')
+
 print(f"len: {len(order1)}")
+item, kg = order1[0]
+print("\n")
+print(f"index {item} count: {kg}")
+print("\n")
+for item, kg in order1:
+    print(f"for {item} count: {kg}")
 
-print(f"index {order1[1]}")
-for item in order1:
-    print(f"for {item}")
-
-x = order1[1:]
-
-for i in x:
-    print(f"slice:{i}")
+x = order1[::-1]
+print("\n")
+for i, j in x:
+    print(f"slice:{i} count {j} ")
