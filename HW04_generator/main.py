@@ -7,11 +7,12 @@
 # 4. Напишіть генераторний вираз для заповнення списку. Список повинен бути заповнений кубами чисел від 2 до вказаної
 # вами величини.
 
-def gen_1(step, max=10):
+def gen_1(step, max=10,flag=0, stop=None):
     for i in range(1, max):
-        tmp = yield i * step
-        if tmp == 0:
+        stop = yield i * step
+        if stop == flag:
             return None
+
 
 x = gen_1(3)
 
