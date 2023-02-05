@@ -20,8 +20,9 @@ for i in x:
     print(f'item number: {i / 3 + 1:.0f} - number {i}')
     if i > 10:
         try:
-            x.send(0)
-            break
+            # x.send(0)
+            # через команду придуманную , или просто через команду ниже
+            x.close()
         except StopIteration as e:
             pass
 
