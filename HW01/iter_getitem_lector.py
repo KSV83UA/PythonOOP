@@ -52,7 +52,7 @@ class Cart:
         if isinstance(item, slice):
             products = self.__products[item]
             quantities = self.__quantities[item]
-            return Cart([(product, quantity) for product, quantity in zip(products, quantities)])
+            return Cart(*[(product, quantity) for product, quantity in zip(products, quantities)])
         raise TypeError()
 
     def __len__(self):
