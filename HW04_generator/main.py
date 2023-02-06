@@ -74,7 +74,7 @@ def get_cube(number):
         yield i * 3
 
 
-l = [i for i in get_cube(20)]
-print(l)
+my_list = (i for i in get_cube(20))
+print(' '.join(map(str, my_list)))
 
 
