@@ -16,6 +16,7 @@ import sys
 
 sys.setrecursionlimit(5000)
 
+
 def fun1(start, stop, user_fun):
     while start < stop:
         start = user_fun(start)
@@ -28,19 +29,16 @@ x = fun1(1, 10, lambda x: x * 2)
 for i in x:
     print(i)
 
-
 # **********************************************************#
 
-
 def fun2():
-    x = [0,1, 1]
+    x = [0, 1, 1]
 
     def mem_fun(n):
         if len(x) >= n:
             return x[n]
         for i in range(len(x), n + 1):
             res = int(x[-2]) + int(x[-1])
-            # res += x
             x.append(res)
         return res
 
@@ -66,9 +64,9 @@ print(f'Фибоначи рекурсия первый запуск, число(
 print(f'Фибоначи рекурсия с кешем первый запуск, число({element}): {timeit.timeit(stmt="fun4(element)", setup="from __main__ import fun4, element")}')
 print(f'Фибоначи замыкание с кешем первый запуск, число({element}): {timeit.timeit(stmt="tmp1(element)", setup="from __main__ import tmp1, element")}')
 print("\n")
-print(f'Фибоначи рекурсия второй запуск, число({element}): {timeit.timeit(stmt="fun3(element2)", setup="from __main__ import fun3, element2")}')
-print(f'Фибоначи рекурсия с кешем второй запуск, число({element}): {timeit.timeit(stmt="fun4(element2)", setup="from __main__ import fun4, element2")}')
-print(f'Фибоначи замыкание с кешем второй запуск, число({element}): {timeit.timeit(stmt="tmp1(element2)", setup="from __main__ import tmp1, element2")}')
+print(f'Фибоначи рекурсия второй запуск, число({element2}): {timeit.timeit(stmt="fun3(element2)", setup="from __main__ import fun3, element2")}')
+print(f'Фибоначи рекурсия с кешем второй запуск, число({element2}): {timeit.timeit(stmt="fun4(element2)", setup="from __main__ import fun4, element2")}')
+print(f'Фибоначи замыкание с кешем второй запуск, число({element2}): {timeit.timeit(stmt="tmp1(element2)", setup="from __main__ import tmp1, element2")}')
 
 
 def fun5(my_list, fun):
