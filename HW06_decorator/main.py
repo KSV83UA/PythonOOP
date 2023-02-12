@@ -57,7 +57,6 @@ class My_1:
     def __init__(self):
         self.line = "this line in class"
 
-
     @decor_str
     def __str__(self):
         return self.line
