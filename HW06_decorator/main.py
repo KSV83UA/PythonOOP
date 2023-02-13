@@ -10,10 +10,8 @@ import time
 
 ######    1    ##########
 def decorator_counter(func):
-    # decorator_counter.func.__name__ = 0
-    name = str(func.__name__)
+    name = func.__name__
     setattr(decorator_counter, name, 0)
-
     def inner(*args, **kwargs):
         decorator_counter.__dict__[name] += 1
         return func(*args, **kwargs)
