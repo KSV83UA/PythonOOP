@@ -10,20 +10,34 @@ import time
 
 ######    1    ##########
 def decorator_counter(func):
-    decorator_counter.count = 0
+    # decorator_counter.func.__name__ = 0
+    name = str(func.__name__)
+    setattr(decorator_counter, name, 0)
+
     def inner(*args, **kwargs):
-        decorator_counter.count += 1
-        return f'{func(*args, **kwargs)} + decor'
+        decorator_counter.__dict__[name] += 1
+        return func(*args, **kwargs)
     return inner
 
 @decorator_counter
 def f_counter(name):
     return f'name: {name}'
 
+@decorator_counter
+def f_counter1(name):
+    return f'name: {name}'
+
+
 for _ in range(4):
     f_counter('asd')
 
-print(f'count interation: {decorator_counter.count}')
+for _ in range(10):
+    f_counter1('asd')
+
+print(decorator_counter.f_counter)
+print(decorator_counter.f_counter1)
+
+# print(f'count interation: {decorator_counter.count}')
 
 ######    2    ##########
 list_fun = []
