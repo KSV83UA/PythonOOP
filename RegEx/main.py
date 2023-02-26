@@ -3,7 +3,6 @@
 # Напишіть регулярний вираз, який знаходитиме в тексті фрагменти, що складаються з однієї літери R, за якою слідує
 # одна або більше літер b, за якою одна r. Враховувати верхній та нижній регістр.
 import re
-from turtle import reset
 
 result = re.findall('[Rr][bB]+[Rr]', 'dfmlkmlsdf Rbbbbr jklskdflkmsdsdfsdrbr')
 print(result)
@@ -30,6 +29,11 @@ print(re.findall(pattern, text))
 def validation_email(email):
 
     pattern = r'^(([a-zA-z][a-zA-Z\d]*[-_]?[a-zA-Z\d]+)+@(([a-zA-Z\d]+[-_]?[a-zA-Z\d])+\.?)+)\b$'
+
+    #OR
+
+    # pattern = r'^(([a-zA-z][\w\d]*-?[\w\d]+)+@(([\w\d]+-?[\w\d])+\.?)+)\b$'#если не привязываться к _
+
     result = re.findall(pattern, email, re.I)
     # print(result)
     return bool(result)
