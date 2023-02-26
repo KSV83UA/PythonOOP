@@ -28,14 +28,13 @@ print(re.findall(pattern, text))
 # -Символ "-" не може повторюватися.
 
 def validation_email(email):
-    #  в дааном паттене можно чтобы в ящике было несколько -
-    pattern = r'^(([a-zA-z][a-zA-Z\d]*[-_]?[a-zA-Z\d]+)@(([a-zA-Z\d]+[-_]?[a-zA-Z\d])+\.?)+)\b$' # \w не использую чтобі небіло __ подряд
-    # result = re.search(pattern, email, re.I)
-    result = re.match(pattern, email, re.I)
-    print(result)
+
+    pattern = r'^(([a-zA-z][a-zA-Z\d]*[-_]?[a-zA-Z\d]+)+@(([a-zA-Z\d]+[-_]?[a-zA-Z\d])+\.?)+)\b$'
+    result = re.findall(pattern, email, re.I)
+    # print(result)
     return bool(result)
 
-print(f'e-mail: {validation_email("s-sdsd@goog-9le.com.ua")}')
+print(f'e-mail: {validation_email("a-a@gOogle.com.ua.ua")}')
 
 # Task 4
 # Напишіть функцію, яка перевіряє правильність логіну. Правильний логін – рядок від 2 до 10 символів, що містить лише
